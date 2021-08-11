@@ -7,5 +7,13 @@
 // Write a main method to create an object and call the above methods.
 
 public class Project_6 {
-    
+    int calculate(int n1, int n2, char c){
+        
+    }
+    int calculate(int n1, char d, char c){
+
+    }
+    public static void main(String[] args) {
+        Project_6 ob = new Project_6();
+    }
 }
