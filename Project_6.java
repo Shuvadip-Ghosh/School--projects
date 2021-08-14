@@ -7,8 +7,13 @@
 // Write a main method to create an object and call the above methods.
 
 public class Project_6 {
-    int calculate(int n1, int n2, char c){
-        
+    int calculate(int n1, int n2, char c){    
+        int ascii = (int) c;
+        // System.out.println(ascii);
+        if (n1*n2>ascii)
+            return (n1*n1)+(n2*n2);
+        else 
+            return (n1*n1*n1)+(n2*n2*n2);
     }
     int calculate(int n1, char d, char c){
 
