@@ -16,9 +16,18 @@ public class Project_6 {
             return (n1*n1*n1)+(n2*n2*n2);
     }
     int calculate(int n1, char d, char c){
-
+        int ascii = (int) c;
+        int ascii_d = (int) d;
+        if (n1>ascii+ascii_d)
+            return n1+ascii+ascii_d;
+        else 
+            return n1*ascii*ascii_d;
     }
     public static void main(String[] args) {
         Project_6 ob = new Project_6();
+        int m_1 = ob.calculate(96, 'm', 'j');
+        System.out.println(m_1);
+        int m_2 = ob.calculate(95, 56, 'd');
+        System.out.println(m_2);
     }
 }
