@@ -21,7 +21,6 @@
 // 20%
 // 12%
 
-
 // void display(): Displays the name of the policy holder, sum assured and 
 // the discount amount received. Also displays the commission.
 // Write a main method to create an object and call the above methods.
@@ -39,12 +38,28 @@ public class Incentive {
         pre = sc.nextDouble();
     }
     void compute(){
-
+        if (sum<=100000){
+            discount_amt = pre - (pre*0.1);
+            comm = sum*0.03;
+        }
+        else if (sum>=100001 && sum <=200000){
+            discount_amt = pre - (pre*0.15);
+            comm = sum*0.05;
+        }
+        else if (sum>=200001 && sum <=500000){
+            discount_amt = pre - (pre*0.18);
+            comm = sum*0.08;
+        }
+        else {
+            discount_amt = pre - (pre*0.2);
+            comm = sum*0.12;
+        }
     }
     void display(){
         System.out.println("Name : "+name);
         System.out.println("Sum assured : "+sum);
         System.out.println("Discount amount received : "+discount_amt);
+        System.out.println("commission: "+discount_amt);
     }
     public static void main(String[] args) {
         Incentive ob = new Incentive();
