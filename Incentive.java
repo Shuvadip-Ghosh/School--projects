@@ -25,7 +25,31 @@
 // void display(): Displays the name of the policy holder, sum assured and 
 // the discount amount received. Also displays the commission.
 // Write a main method to create an object and call the above methods.
+import java.util.Scanner;
+public class Incentive {
+    String name;
+    double sum ,pre, comm,discount_amt;
+    void input(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Name of the investor/policy holder : ");
+        name = sc.nextLine();
+        System.out.println("Enter sum assured : ");
+        sum = sc.nextDouble();
+        System.out.println("Enter first annual premium: ");
+        pre = sc.nextDouble();
+    }
+    void compute(){
 
-public class Project_8 {
-    
+    }
+    void display(){
+        System.out.println("Name : "+name);
+        System.out.println("Sum assured : "+sum);
+        System.out.println("Discount amount received : "+discount_amt);
+    }
+    public static void main(String[] args) {
+        Incentive ob = new Incentive();
+        ob.input();
+        ob.compute();
+        ob.display();
+    }
 }
