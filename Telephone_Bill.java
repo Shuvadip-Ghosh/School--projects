@@ -43,34 +43,34 @@ public class Telephone_Bill {
     void calculate(){
         billamt = 195.0;
         for (int i = 1 ; i<= calls;i++){
-            if(i==120)
+            if(i==120){
                 billamt =billamt+100.0;
+            }
             else if(i>=121&&i<=220){
                 billamt = billamt+0.95;
             }
             else if(i>=221&&i<=320){
                 billamt = billamt+1.05;
             }
-            else if(i<=321){
+            else if(i>=321){
                 billamt = billamt+1.25;
             }
         }
-        System.out.print(billamt+"  ");
     }
     void display(){
-        // System.out.printf("%10s %30s %20s %5s %5s", "Bill No.", "Name", "No. of calls", "Bill Amount");
-        // System.out.println();
-        // System.out.format("%10s %30s %20s %5d %5c",bno, name, calls,"Rs "+ billamt);
-        // System.out.println();
-        System.out.println(bno);
-        System.out.println(name);
-        System.out.println(calls);
-        System.out.println(billamt);
+        System.out.printf("%10s %30s %20s %5s %5s", "Bill No.", "Name", "No. of calls", "Bill Amount");
+        System.out.println();
+        System.out.format("%10s %30s %20s %5d %5c",bno, name, calls,"Rs "+ billamt);
+        System.out.println();
+        // System.out.println(bno);
+        // System.out.println(name);
+        // System.out.println(calls);
+        // System.out.println(billamt);
     }
     public static void main(String[] args) {
         Telephone_Bill ob = new Telephone_Bill();
         Telephone_Bill ob1 = new Telephone_Bill(256,1000,"Shuvadip Ghosh");
         ob1.calculate();
-        // ob1.display();
+        ob1.display();
     }
 }
