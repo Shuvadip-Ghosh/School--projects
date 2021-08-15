@@ -32,10 +32,10 @@ public class Incentive {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name of the investor/policy holder : ");
         name = sc.nextLine();
-        System.out.println("Enter sum assured : ");
-        sum = sc.nextDouble();
         System.out.println("Enter first annual premium: ");
         pre = sc.nextDouble();
+        System.out.println("Enter sum assured : ");
+        sum = sc.nextDouble();
     }
     void compute(){
         if (sum<=100000){
@@ -50,7 +50,7 @@ public class Incentive {
             discount_amt = pre - (pre*0.18);
             comm = sum*0.08;
         }
-        else {
+        else if(sum>500000) {
             discount_amt = pre - (pre*0.2);
             comm = sum*0.12;
         }
@@ -59,7 +59,7 @@ public class Incentive {
         System.out.println("Name : "+name);
         System.out.println("Sum assured : "+sum);
         System.out.println("Discount amount received : "+discount_amt);
-        System.out.println("commission: "+discount_amt);
+        System.out.println("Commission: "+discount_amt);
     }
     public static void main(String[] args) {
         Incentive ob = new Incentive();
