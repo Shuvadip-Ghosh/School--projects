@@ -58,18 +58,14 @@ public class Telephone_Bill {
         }
     }
     void display(){
-        System.out.printf("%10s %30s %20s %5s %5s", "Bill No.", "Name", "No. of calls", "Bill Amount");
+        System.out.printf("%-5s%-50s%-15s%-5s","Bill No.","Name","No. of calls","Bill Amount(in Rupees)");
         System.out.println();
-        System.out.format("%10s %30s %20s %5d %5c",bno, name, calls,"Rs "+ billamt);
+        System.out.format("%-5d%-53s%-15d%-5.2f",bno, name, calls,billamt);
         System.out.println();
-        // System.out.println(bno);
-        // System.out.println(name);
-        // System.out.println(calls);
-        // System.out.println(billamt);
     }
     public static void main(String[] args) {
         Telephone_Bill ob = new Telephone_Bill();
-        Telephone_Bill ob1 = new Telephone_Bill(256,1000,"Shuvadip Ghosh");
+        Telephone_Bill ob1 = new Telephone_Bill(256,10000,"Shuvadip Ghosh");
         ob1.calculate();
         ob1.display();
     }
