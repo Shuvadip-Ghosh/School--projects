@@ -39,19 +39,19 @@ public class Incentive {
     }
     void compute(){
         if (sum<=100000){
-            discount_amt = pre - (pre*0.1);
+            discount_amt = pre*0.1;
             comm = sum*0.03;
         }
         else if (sum>=100001 && sum <=200000){
-            discount_amt = pre - (pre*0.15);
+            discount_amt = pre*0.1;
             comm = sum*0.05;
         }
         else if (sum>=200001 && sum <=500000){
-            discount_amt = pre - (pre*0.18);
+            discount_amt = pre*0.18;
             comm = sum*0.08;
         }
         else if(sum>500000) {
-            discount_amt = pre - (pre*0.2);
+            discount_amt = pre*0.2;
             comm = sum*0.12;
         }
     }

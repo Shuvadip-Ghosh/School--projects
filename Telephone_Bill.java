@@ -58,9 +58,9 @@ public class Telephone_Bill {
         }
     }
     void display(){
-        System.out.printf("%-5s%-50s%-15s%-5s","Bill No.","Name","No. of calls","Bill Amount(in Rupees)");
+        System.out.printf("%-5s  %-30s%-15s%-5s","Bill No.","Name","No. of calls","Bill Amount(in Rupees)");
         System.out.println();
-        System.out.format("%-5d%-53s%-15d%-5.2f",bno, name, calls,billamt);
+        System.out.format("%-10d%-30s%-15d%-5.2f",bno, name, calls,billamt);
         System.out.println();
     }
     public static void main(String[] args) {

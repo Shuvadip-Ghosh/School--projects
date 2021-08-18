@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Telephone_Bill",
+            "request": "launch",
+            "mainClass": "Telephone_Bill",
+            "projectName": "School--projects_bf610804"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
