@@ -9,5 +9,7 @@
 // Write a main method to create a class and call the above methods.
 
 public class Expenses {
-    
+    public static void main(String[] args) {
+        
+    }
 }
