@@ -9,7 +9,7 @@
 // Write a main method to create a class and call the above methods.
 import java.util.Scanner;
 public class Expenses {
-    double Msal, sFood, sTra, sStyle, sOut, sChr, sInv, Save, sTrip, aExp;
+    double Msal, sFood, sTra, sStyle, sOut, sChr, sInv, Save, sTrip, aExp,Asal;
     Expenses(){
         Msal = 0.0d;
         sFood = 0.0d;
@@ -27,7 +27,24 @@ public class Expenses {
         System.out.println("Enter your monthly salary: ");
         Msal = sc.nextDouble();
     }
+    void expenditure(){
+        Asal = Msal*12;
+        sFood = Asal*0.45;
+        sTra = (Asal-sFood)*0.10;
+        sStyle = Asal*0.08;
+        sOut = Asal*0.05;
+        sChr = Asal*0.02;
+        sInv = Asal*0.10;
+        Save = Asal-sFood-sChr-sInv-sOut-sStyle-sTra-sTrip;
+    }
+    void display(){
+        System.out.println(Save);
+        System.out.println(Asal-Save);
+    }
     public static void main(String[] args) {
-        
+        Expenses ob = new Expenses();
+        ob.input();
+        ob.expenditure();
+        ob.display();
     }
 }

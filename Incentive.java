@@ -59,7 +59,7 @@ public class Incentive {
         System.out.println("Name : "+name);
         System.out.println("Sum assured : "+sum);
         System.out.println("Discount amount received : "+discount_amt);
-        System.out.println("Commission: "+discount_amt);
+        System.out.println("Commission: "+comm);
     }
     public static void main(String[] args) {
         Incentive ob = new Incentive();

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Expenses",
+            "request": "launch",
+            "mainClass": "Expenses",
+            "projectName": "School--projects_bf610804"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "School--projects_bf610804"
+        },
+        {
+            "type": "java",
             "name": "Launch Telephone_Bill",
             "request": "launch",
             "mainClass": "Telephone_Bill",
