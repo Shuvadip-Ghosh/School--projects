@@ -9,6 +9,34 @@
             "name": "Launch Expenses",
             "request": "launch",
             "mainClass": "Expenses",
+            "projectName": "School--projects_c3da108b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Telephone_Bill",
+            "request": "launch",
+            "mainClass": "Telephone_Bill",
+            "projectName": "School--projects_c3da108b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Project_6",
+            "request": "launch",
+            "mainClass": "Project_6",
+            "projectName": "School--projects_c3da108b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Project_5",
+            "request": "launch",
+            "mainClass": "Project_5",
+            "projectName": "School--projects_c3da108b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Expenses",
+            "request": "launch",
+            "mainClass": "Expenses",
             "projectName": "School--projects_bf610804"
         },
         {

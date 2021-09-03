@@ -9,7 +9,7 @@
 // Write a main method to create a class and call the above methods.
 import java.util.Scanner;
 public class Expenses {
-    double Msal, sFood, sTra, sStyle, sOut, sChr, sInv, Save, sTrip, aExp,Asal;
+    double Msal, sFood, sTra, sStyle, sOut, sChr, sInv, Save, sTrip, aExp ,Asal, aSave, mSave, tot;
     Expenses(){
         Msal = 0.0d;
         sFood = 0.0d;
@@ -24,22 +24,34 @@ public class Expenses {
     }
     void input(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your monthly salary: ");
+        System.out.print("Enter your monthly salary: ");
         Msal = sc.nextDouble();
     }
     void expenditure(){
         Asal = Msal*12;
-        sFood = Asal*0.45;
-        sTra = (Asal-sFood)*0.10;
-        sStyle = Asal*0.08;
-        sOut = Asal*0.05;
-        sChr = Asal*0.02;
-        sInv = Asal*0.10;
-        Save = Asal-sFood-sChr-sInv-sOut-sStyle-sTra-sTrip;
+        sFood = Msal*0.45;
+        sTra = Msal*0.10;
+        sStyle = Msal*0.08;
+        sOut = Msal*0.05;
+        sChr = Msal*0.02;
+        sInv = Msal*0.10;
+        tot = sFood+sChr+sInv+sOut+sStyle+sTra+sTrip;
+        mSave = Msal-tot;
+        aSave = mSave*12;
+        sTrip = aSave*0.10;
+        Save = aSave-sTrip;
+        aExp = Asal - Save;
     }
     void display(){
-        System.out.println(Save);
-        System.out.println(Asal-Save);
+        System.out.println("Money spent on food annually           : " +sFood*12);
+        System.out.println("Money spent on clothing annually       : " +sStyle*12);
+        System.out.println("Money spent on transportation annually : " +sTra*12);
+        System.out.println("Money spent on outings annually        : " +sOut*12);
+        System.out.println("Money spent on charity annually        : " +sChr*12);
+        System.out.println("Money spent on investments annually    : " +sInv*12);
+        System.out.println("Money spent on holiday trip annually   : " +sTrip);
+        System.out.println("Money spent on expense annually        : " +aExp);
+        System.out.println("Money spent on savings annually        : " +Save);
     }
     public static void main(String[] args) {
         Expenses ob = new Expenses();
