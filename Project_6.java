@@ -9,7 +9,6 @@
 public class Project_6 {
     int calculate(int n1, int n2, char c){    
         int ascii = (int) c;
-        // System.out.println(ascii);
         if (n1*n2>ascii)
             return (n1*n1)+(n2*n2);
         else 

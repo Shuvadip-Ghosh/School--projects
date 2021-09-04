@@ -7,15 +7,13 @@
 public class Project_5 {
     int fnPerfect(int n){
         long sum=0;  
-        //executes until the condition becomes false  
         for(int i=1; i <= n/2; i++)  
         {  
             if(n % i == 0)  
             {  
-            //calculates the sum of factors  
                 sum=sum + i;  
-            } //end of if  
-        }  //end of for  
+            } 
+        }   
         if (sum == n)
             return 1;
         else
@@ -36,5 +34,5 @@ public class Project_5 {
             }
         }
     }
-    
+
 }
