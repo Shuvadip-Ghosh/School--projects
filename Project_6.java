@@ -25,8 +25,8 @@ public class Project_6 {
     public static void main(String[] args) {
         Project_6 ob = new Project_6();
         int m_1 = ob.calculate(96, 'm', 'j');
-        System.out.println(m_1);
+        System.out.println("Result of calculation 1: "+m_1);
         int m_2 = ob.calculate(95, 56, 'd');
-        System.out.println(m_2);
+        System.out.println("Result of calculation 1: "+m_2);
     }
 }

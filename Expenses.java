@@ -50,8 +50,8 @@ public class Expenses {
         System.out.println("Money spent on charity annually        : " +sChr*12);
         System.out.println("Money spent on investments annually    : " +sInv*12);
         System.out.println("Money spent on holiday trip annually   : " +sTrip);
-        System.out.println("Money spent on expense annually        : " +aExp);
-        System.out.println("Money spent on savings annually        : " +Save);
+        System.out.println("Total expense annually                 : " +aExp);
+        System.out.println("Total savings annually                 : " +Save);
     }
     public static void main(String[] args) {
         Expenses ob = new Expenses();
