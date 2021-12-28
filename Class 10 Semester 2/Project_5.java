@@ -44,7 +44,7 @@ public class Project_5 {
             }
         }
         if (c>0)
-            obj.Xylem_Phloem(12348);
+            obj.Xylem_Phloem(n);
         else
             System.out.println("The entered number is not in the array.");
     }
